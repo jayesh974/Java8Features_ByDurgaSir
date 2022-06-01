@@ -31,7 +31,7 @@ class Test2 {
 		
 		for (Employee e : l) {
 			
-			c.accept(e, 500.0);
+			c.accept(e, 500.0);     // performed operation on the given argument
 		}
 		
 		for (Employee e : l) {

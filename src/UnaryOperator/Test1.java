@@ -13,7 +13,7 @@ public class Test1 {
 		System.out.println(f.apply(5));
 	*/
 		
-//		With UnaryOperator
+//		With UnaryOperator  --> child of Function Interface
 		
 		 UnaryOperator<Integer> f=i->i*i;
 		 

@@ -6,6 +6,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 class Student {
+	
 	String name;
 	int marks;
 
@@ -18,9 +19,12 @@ class Student {
 class Predicate_Consumer_function {
 	
 	public static void main(String[] args) {
+		
 		ArrayList<Student> l = new ArrayList<Student>();
 		populate(l);
+		
 		Predicate<Student> p = s -> s.marks >= 60;
+		
 		Function<Student, String> f = s -> {
 			int marks = s.marks;
 			if (marks >= 80) {
@@ -36,12 +40,14 @@ class Predicate_Consumer_function {
 			}
 
 		};
+		
 		Consumer<Student> c = s -> {
 			System.out.println("Student Name:" + s.name);
 			System.out.println("Student Marks:" + s.marks);
 			System.out.println("Student Grade:" + f.apply(s));
 			System.out.println();
 		};
+		
 		for (Student s : l) {
 			if (p.test(s)) {
 				c.accept(s);

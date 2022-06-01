@@ -8,12 +8,12 @@ import java.util.function.ObjDoubleConsumer;
  */
 
 class Employee {
+	
 	String name;
 	double salary;
 
 	Employee(String name, double salary) {
 		this.name = name;
-
 		this.salary = salary;
 	}
 }
@@ -24,16 +24,18 @@ class Test2 {
 
 		ArrayList<Employee> l = new ArrayList<Employee>();
 		populate(l);
+		
 		ObjDoubleConsumer<Employee> c = (e, d) -> e.salary = e.salary + d;
+		
 		for (Employee e : l) {
 			c.accept(e, 500.0);
 		}
+		
 		for (Employee e : l) {
 			System.out.println("Employee Name:" + e.name);
 			System.out.println("Employee Salary:" + e.salary);
 			System.out.println();
 		}
-
 	}
 
 	public static void populate(ArrayList<Employee> l) {

@@ -18,7 +18,7 @@ class Employee {
 		this.city = city;
 	}
 
-	public String toString() {
+	public String toString() {      // to meaningful representation purpose
 		String s = String.format("[%s,%s,%.2f,%s]", name, designation, salary, city);
 		return s;
 	}
@@ -58,6 +58,8 @@ class Test {
 
 		System.out.println("All Employees Information who are not managers:");
 		display(p1.negate(), list);
+		
+//		 isEqual()  -> from the Predicate interface
 
 		Predicate<Employee> isCEO = Predicate.isEqual(new Employee("Durga", "CEO", 30000, "Hyderabad"));
 

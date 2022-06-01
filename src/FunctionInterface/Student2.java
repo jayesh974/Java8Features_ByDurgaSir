@@ -28,8 +28,7 @@ class FindStudentGradeInfoWithCondition {
 		
 		Function<Student2, String> f = s -> {
 			int marks = s.marks;
-			if (marks >= 80)
-			{
+			if (marks >= 80){
 				return "A[Dictinction]";
 			} else if (marks >= 60) {
 				return "B[First Class]";

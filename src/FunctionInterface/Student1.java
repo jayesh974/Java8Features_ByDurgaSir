@@ -19,6 +19,7 @@ class Student1 {
 }
 
 class FindStudentGrade {
+	
 	public static void main(String[] args) {
 		
 		ArrayList<Student1> l = new ArrayList<Student1>();
@@ -50,6 +51,7 @@ class FindStudentGrade {
 	}
 
 	public static void populate(ArrayList<Student1> l) {
+		
 		l.add(new Student1("Sunny", 100));
 		l.add(new Student1("Bunny", 65));
 		l.add(new Student1("Chinny", 55));

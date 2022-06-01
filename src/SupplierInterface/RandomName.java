@@ -9,9 +9,10 @@ public class RandomName {
 	public static void main(String[] args) {
 				
 		Supplier<String> s = () -> {
+			
 			String[] s1 = { "Sunny", "Bunny", "Chinny", "Pinny" };
 			
-			int x = (int) (Math.random() * 4);
+			int x = (int) (Math.random() * 4);              // get random value from 0 to 4			
 			return s1[x];
 		};
 		

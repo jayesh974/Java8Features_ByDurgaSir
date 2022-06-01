@@ -19,9 +19,10 @@ class Student {
 class Test1 {
 
 	public static void main(String[] args) {
-		ArrayList<Student> l = new ArrayList<Student>();
 		
-		BiFunction<String, Integer, Student> f = (name, rollno) -> new Student(name, rollno);
+		ArrayList<Student> l = new ArrayList<>();
+		
+		BiFunction<String, Integer, Student> f = (name, rollno) -> new Student(name, rollno);  // constructor reference
 		
 		l.add(f.apply("Durga", 100));
 		l.add(f.apply("Ravi", 200));

@@ -5,6 +5,7 @@ import java.util.function.Predicate;
 /*
  * Program to check whether SoftwareEngineer is allowed into pub or not by using Predicate?
  */
+
 class SoftwareEngineer {
 	
 	String name;
@@ -40,7 +41,7 @@ class Demo {
 		
 		for (SoftwareEngineer se : list) {
 			
-			if (allowed.test(se)) {f
+			if (allowed.test(se)) {
 				
 				System.out.println(se);
 			}

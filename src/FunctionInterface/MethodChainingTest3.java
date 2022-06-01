@@ -15,6 +15,7 @@ public class MethodChainingTest3 {
 		Function<String, String> f2 = s -> s.substring(0, 5);
 
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Enter User Name:");
 		String username = sc.next();
 

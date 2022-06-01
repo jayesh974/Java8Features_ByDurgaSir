@@ -11,7 +11,8 @@ public class Test1 {
 		/*
 		 * // With normal function interface
 		 * 
-		 * Function<Integer, Integer> f = i -> i * i; System.out.println(f.apply(5));
+		 * Function<Integer, Integer> f = i -> i * i;
+         *                               System.out.println(f.apply(5));
 		 */
 
 //		With UnaryOperator

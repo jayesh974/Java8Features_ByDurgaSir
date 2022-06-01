@@ -17,8 +17,7 @@ public class RemoveNullAndEmptyString {
 		
 		for (String s : names) {
 			
-			if (p.test(s)) {
-				
+			if (p.test(s)) {				
 				list.add(s);
 			}
 		}

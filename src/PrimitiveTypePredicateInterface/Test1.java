@@ -1,9 +1,9 @@
 package PrimitiveTypePredicateInterface;
+
+import java.util.function.IntPredicate;
 /**
  *  Demo Program for IntPredicate:
  */
-import java.util.function.IntPredicate;
-
 public class Test1 {
 
 	public static void main(String[] args) {

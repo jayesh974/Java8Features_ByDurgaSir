@@ -3,7 +3,7 @@ package FunctionInterface;
 import java.util.function.Function;
 
 /*
- * o program to Demonstrate the difference between andThen() and compose():
+ *  program to Demonstrate the difference between andThen() and compose():
  */
 
 public class MethodChainingTest2 {
